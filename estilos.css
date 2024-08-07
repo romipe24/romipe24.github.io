@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+
+  /*css para el header menu*/
+  header {
+    background-color: #000000c0;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: large;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+
+  /*aca empieza css para las fotos */
+  .container_fotos_inicio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo {
+    flex: 1;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border: 2px solid black;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/*aca empieza css para Historia */
+#presentacion {
+  background-color: #000000c0;
+  color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: auto;
+  height: 50px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+/*Aca empieza codigo para la Galeria */
+
+/* habia puesto un h2 de galeria pero lo saque lo dejo por si lo vuelvo a poner h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size:large;
+}*/
+
+#galeria img{
+  width: 100%;
+}
+
+#galeria.row{
+  display: flex; 
+  padding:10px;
+}
+
+#galeria .column{
+  flex: 25%;
+  padding: 5px;
+}
+
+#galeria .column img{
+  margin-top: 5px;
+}
+
+/*Aca empieza css para contacto*/
+#contacto {
+  background-color: #000000c0;
+  color: white;
+  padding: 10px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+}
+
+#contacto h2{
+  text-align: center;
+  font-size: x-large;
+  padding-right: 15px;
+}
+
+ form {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+}
+
+form p {
+  margin-bottom: 15px;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  margin-right: 10px;
+  width: calc(100% - 22px); 
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+form input[type="submit"] {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #777; 
+  /*Esto es para que al poner el mouse arriba cambia de color*/
+}
